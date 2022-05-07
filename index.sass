@@ -1,0 +1,595 @@
+@import 'vendor/fonts/fonts.css'
+%flex-row
+  display: flex
+  flex-direction: row
+%flex-col
+  display: flex
+  flex-direction: column
+%max-width
+  max-width: 1110px
+  width: 100%
+%width-marg
+  max-width: 1110px
+  width: 100%
+  margin: 112px auto 0
+%flex
+  display: flex
+%h2
+  font-family: 'Lora'
+  font-style: normal
+  font-weight: 700
+  font-size: 40px
+  line-height: 51px
+  color: #10375C
+%LatoS
+  font: 16px/26px 'Lato'
+  font-style: normal
+  font-weight: 400
+%LatoM
+  font: 18px/28px 'Lato'
+  font-style: normal
+  font-weight: 500
+%LatoL
+  font: 20px/30px 'Lato'
+  font-style: normal
+  font-weight: 500
+%LoraS
+  font: 32px/41px 'Lora'
+  font-weight: 400
+%LoraM
+  font: 40px/51px 'Lora'
+  font-weight: 700
+%LoraL
+  font: 52px/67px 'Lora'
+  font-weight: 700
+a
+  text-decoration: none
+  color: black
+ul
+  list-style-type: none
+  margin-block-start: 0
+  margin-block-end: 0
+  padding-inline-start: 0
+p, h1, h2, h3, h4
+  margin-block-start: 0
+  margin-block-end: 0
+.body
+  @extend %flex-col
+  margin: 0
+.facilities, .use-frispies, .faq
+  @extend %flex-col
+  @extend %width-marg
+.hero__intro, .facilities__intro, .gallery__intro, .customer__intro
+  @extend %flex-row
+  font: 20px/30px 'Lato'
+  font-weight: 500
+  color: #222831
+.header
+  @extend %max-width
+  @extend %flex
+  margin: 60px auto
+  justify-content: space-between
+.header__logo
+  @extend %flex
+.header__nav
+  @extend %flex-row
+  width: 562px
+  justify-content: space-between
+.header__nav_item
+  @extend %flex
+  font: 16px/28px 'Lato'
+  font-weight: 700
+  color: #222831
+  align-self: center
+.header__login
+  @extend %flex-row
+  font-weight: 700
+  font: 16px/19px 'Lato'
+.header__login_log
+  padding: 12px 24px
+  a
+    color: #FF5722
+.header__login_sign
+  padding: 12px 24px
+  background-color: #FF5722
+  a
+    color: #fff
+.hero
+  @extend %flex-col
+  @extend %max-width
+  margin: 0 auto
+.hero__head
+  @extend %flex-row
+.hero__head_title
+  @extend %LoraL
+  color: #10375C
+  margin-right: 61px
+.hero__head_subtitle
+  color: #6A6A6A
+  @extend %LatoL
+  max-width: 382px
+  width: 100%
+.hero__head_image
+  width: 1110px
+  height: 566px
+  box-sizing: border-box
+.our-space
+  @extend %flex-col
+  @extend %max-width
+  margin: 114px auto 0
+.our-space__head
+  @extend %flex-row
+  justify-content: space-between
+.our-space__intro
+  @extend %flex-row
+  font-style: normal
+  @extend %LoraM
+  align-self: center
+  color: #10375C
+.our-space__text
+  @extend %LatoM
+  color: #9A9A9A
+  max-width: 452px
+  width: 100%
+.our-space__list
+  @extend %flex-row
+  margin-top: 50px
+  justify-content: space-between
+.our-space__img
+  max-width: 350px
+  width: 100%
+  max-height: 467px
+  position: relative
+  @extend %flex-col
+  justify-content: space-between
+.our-space__img_photo
+  max-height: 419px
+  height: 100%
+.our-space__img2
+  max-width: 350px
+  width: 100%
+  height: 467px
+  background-color: #10375C
+  @extend %flex-col
+  position: relative
+  justify-content: center
+.our-space__h3
+  font-family: 'Lora'
+  font-style: normal
+  @extend %LoraS
+  color: #fff
+  text-align: center
+.our-space__text-card
+  @extend %LatoM
+  text-align: center
+  color: #FFFFFF
+  margin-top: 14px
+  width: 253px
+  align-self: center
+.our-space__button
+  position: absolute
+  bottom: 48px
+  left: 0
+.our-space__button2
+  bottom: 0
+.our-space__name
+  font-style: normal
+  font-weight: 700
+  font: 20px/24px 'Lato'
+  text-align: center
+  color: #222831
+.whyfrispes
+  @extend %flex-row
+  margin: 110px auto 0
+  @extend %max-width
+.whyfrispes__list
+  display: grid
+  color: #10375C
+  grid-template-columns: repeat(2, 1fr)
+  max-width: 499px
+  width: 100%
+  column-gap: 124px
+  row-gap: 64px
+  margin: 32px 71px 36px 0
+.whyfrispes__answer
+  @extend %flex-col
+  max-width: 540px
+  width: 100%
+  background-color: #10375C
+  color: #fff
+  align-items: center
+  justify-content: center
+  min-height: 421px
+.whyfrispes__block
+  display: grid
+  grid-template-columns: 32px, 1fr
+  grid-template-rows: 41px, 26px
+  column-gap: 24px
+  row-gap: 8px
+  width: fit-content
+.whyfrispes__block_img
+  grid-area: 1/1/2/2
+.whyfrispes__block_num
+  grid-area: 1/2/2/3
+  font-style: normal
+  @extend %LoraS
+.whyfrispes__block_text
+  grid-area: 2/2/3/3
+  @extend %LatoS
+  color: #9A9A9A
+.whyfrispes__answer_intro
+  display: flex
+  @extend %LatoM
+  max-width: 433px
+  width: 100%
+.whyfrispes__answer_head
+  display: flex
+  font-style: normal
+  @extend %LoraM
+  max-width: 433px
+  width: 100%
+  margin: 8px 53px 24px
+.whyfrispes__answer_text
+  display: flex
+  @extend %LatoM
+  max-width: 433px
+  width: 100%
+.facilities__h2
+  display: flex
+  @extend %h2
+  max-width: 570px
+  width: 100%
+  margin-top: 8px
+.facilities__nav
+  display: flex
+  margin-top: 56px
+.facilities__list
+  @extend %flex-col
+  width: 100%
+.facilities__list_item
+  display: flex
+  font-style: normal
+  font-weight: 700
+  font: 20px/24px 'Lato'
+  color: #222831
+  max-width: 293px
+  width: 100%
+  min-height: 72px
+  align-items: center
+  padding-left: 24px
+.facilities__nav_img
+  max-width: 729px
+  width: 100%
+  max-height: 453px
+  height: 100%
+.gallery
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  column-gap: 30px
+  grid-template-rows: repeat(2, 1fr)
+  width: 100%
+  margin: 112px auto 0
+  overflow: hidden
+  height: 606px
+.gallery__head
+  @extend %flex-col
+  grid-area: 1/3/2/5
+.gallery__h2
+  display: flex
+  max-width: 496px
+  width: 100%
+  @extend %h2
+  margin-top: 8px
+  margin-bottom: 38
+.gallery_item
+  width: 350px
+  height: 350px
+.gallery_item-active
+  width: 445px
+  height: 100%
+.item1
+  grid-area: 2/1/3/2
+  width: 230px
+.item2
+  grid-area: 1/2/3/3
+.item3
+  grid-area: 2/3/3/4
+.item4
+  grid-area: 2/4/3/5
+.use-frispies__h2
+  display: flex
+  @extend %h2
+  text-align: center
+  align-self: center
+.use-frispies__text
+  display: flex
+  align-self: center
+  @extend %LatoM
+  text-align: center
+  color: #9A9A9A
+.use-frispies__list
+  display: flex
+  justify-content: space-between
+.customer
+  @extend %flex-col
+  max-width: 1275px
+  margin: 112px 0 0 165px
+  overflow: hidden
+.customer__block
+  @extend %flex-col
+  justify-content: space-between
+  margin-bottom: 56px
+  max-width: 1110px
+  margin-top: 8px
+.customer__h2
+  @extend %h2
+  width: 399px
+.customer__list
+  @extend %flex-row
+  overflow: hidden
+  max-width: 1275px
+  width: 100%
+.customer__list_item
+  @extend %flex-col
+  min-width: 445px
+  height: 393px
+  margin-right: 30px
+  background-color: #10375C
+  &:last-of-type
+    margin-right: 0
+.customer__list_text
+  display: flex
+  width: 365px
+  @extend %LatoS
+  color: #FFFFFF
+  align-self: center
+  margin-top: 47px
+.customer__list_point
+  display: grid
+  margin: auto 16px 35px 40px
+  width: fit-content
+.customer__list_img
+  display: flex
+  width: 56px
+  height: 56px
+  grid-area: 1/1/3/2
+  margin-right: 16px
+.customer__list_h3
+  display: flex
+  font-style: normal
+  font-weight: 700
+  font: 18px/28px 'Lato'
+  color: #FFFFFF
+  grid-area: 1/2/2/3
+.customer__list_p
+  display: flex
+  @extend %LatoS
+  color: #FFFFFF
+  grid-area: 2/2/3/3
+.faq__h2
+  display: flex
+  align-self: center
+  max-width: 578px
+  min-height: 102px
+  @extend %h2
+  text-align: center
+.faq__list
+  @extend %flex-row
+  position: relative
+  width: 100%
+  justify-content: space-between
+  margin-top: 54px
+.faq__list_item
+  display: flex
+  position: relative
+  text-align: center
+  justify-content: center
+  width: 350px
+  height: 171px
+  z-index: 1
+  box-shadow: 0px 10px 20px #efefef
+.faq__list_text
+  width: 100%
+  display: flex
+  justify-self: center
+  font-style: normal
+  font-weight: 400
+  font-size: 26px/33px 'Lora'
+  text-align: center
+  color: #000000
+  padding: 42px 40px 38px
+.faq__list_line
+  display: flex
+  position: absolute
+  z-index: 2
+  width: 64px
+  height: 48px
+  background-color: #ff5722
+  bottom: -23px
+.faq__list_line-rev
+  background-color: #fff
+.line-more
+  display: flex
+  border-bottom: 3px solid #fff
+  border-right: 3px solid #fff 
+  width: 12px
+  height: 12px
+  align-self: center
+  margin: auto
+  transform: rotate(45deg)
+.line-more_rev
+  border-bottom: 3px solid #ff5722
+  border-right: 3px solid #ff5722
+.faq__more
+  display: flex
+  align-self: center
+  margin-top: 44px
+  color: #ff5722
+.news
+  @extend %flex-col
+  margin: 39px auto 0
+  background-color: #f8f8f8
+.news__list
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 30px
+  max-width: 1110px
+  margin: 56px auto 96px
+.news__item-active
+  @extend %flex-row
+  grid-area: 1/1/2/3
+.news__img-active
+  display: flex
+  width: 350px
+  height: 320px
+.news__block-active
+  @extend %flex-col
+  width: 380px
+  height: 320px
+  align-self: center
+  justify-self: center
+  justify-content: space-around
+  background-color: #fff
+.news__head
+  @extend %flex-row
+  @extend %max-width
+  align-self: center
+  justify-content: space-between
+  margin-top: 60px
+.news__h2
+  display: flex
+  @extend %h2
+.news__more
+  display: flex
+  @extend %LatoS
+  color: #FF5722
+  align-self: center
+.news__h3-active
+  display: flex
+  align-self: center
+  max-width: 315px
+  font-style: normal
+  font-weight: 700
+  font: 32px/41px 'Lora'
+  color: #222831
+.news__text-active
+  display: flex
+  align-self: center
+  max-width: 315px
+  @extend %LatoS
+  color: #9A9A9A
+.news__list_point
+  display: grid
+  width: fit-content
+  margin-left: 32px
+.news__list_img
+  display: flex
+  width: 56px
+  height: 56px
+  grid-area: 1/1/3/2
+  margin-right: 16px
+.news__list_h3
+  display: flex
+  font-style: normal
+  font-weight: 700
+  font: 18px/28px 'Lato'
+  color: #10375c
+  grid-area: 1/2/2/3
+.news__list_p
+  display: flex
+  @extend %LatoS
+  color: #9a9a9a
+  grid-area: 2/2/3/3
+.news__item
+  @extend %flex-col
+  background-color: #fff
+  width: 350px
+  height: 320px
+.news__h3
+  display: flex
+  font-style: normal
+  font-weight: 400
+  font: 22px/28px 'Lora'
+  color: #222831
+  max-width: 318px
+  width: 100%
+  align-self: center
+  margin-top: 14px
+.news__text
+  margin: 4px auto 16px
+  align-self: flex-start
+  max-width: 318px
+  width: 100%
+.footer
+  display: flex
+  width: 100%
+  background-color: #0D2C4A
+  color: #fff
+.footer__block
+  @extend %flex-row
+  @extend %max-width
+  margin-top: 56px
+  margin: 56px auto 102px
+  justify-content: space-between
+.footer__list
+  @extend %flex-col
+  width: fit-content
+.footer__list_logo
+  margin-right: 125px
+  justify-content: space-between
+.footer__logo-list
+  @extend %flex-row
+  margin-top: 15px
+  img
+    margin-right: 16px
+    &:last-of-type
+      margin-right: 0
+.footer__logo
+  display: flex
+  font-style: normal
+  @extend %LoraL
+  color: #FFFFFF
+.footer__item
+  display: flex
+  @extend %LatoS
+  color: #F8F8F8
+  max-width: 212px
+  margin-bottom: 9px
+  &:last-of-type
+    margin-bottom: 0
+.footer__name
+  opacity: 0.5
+  height: 60px
+  align-items: flex-end
+.footer__text
+  max-width: 255px
+  margin-top: 16px
+.active
+  color: #FF5722
+.line
+  display: flex
+  border-top: 2px solid #000
+  width: 73px
+  top: 17px
+  margin-bottom: 0px
+  align-self: center
+  margin-left: 15px
+.line_white
+  border-color: #fff
+.color
+    color: #DD2C00
+.active_back
+  background-color: #FF5722
+  color: #fff
+  box-shadow: 10px 10px 30px #ff9a7a
+.active_back2
+  background-color: #FF5722
+  color: #fff
+.arrow
+  @extend %flex-row
+  max-width: 168px
+  width: 100%
+  align-self: flex-end
+  justify-content: space-between
+.arrow_start
+  align-self: flex-start
